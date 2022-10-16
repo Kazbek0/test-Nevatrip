@@ -1,0 +1,190 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+@mixin text-st($fw,$fs,$lh,$c,$f) {
+    font-weight:$fw;
+    font-size: $fs;
+    line-height: $lh;
+    color:$c;
+    font-family:$f;
+}
+
+
+.main{
+    display: flex;width: 1070px;height: 370px;border-radius: 15px;
+     border: 0.5px solid rgba(142, 142, 142, 1);margin-top: 67px;margin-left: 184px;
+    }
+
+.img{
+    width: 473px;height: 396px;background-repeat: no-repeat;
+    background-image: url(../../img/ekskursii-po-spb-na-avtobuse\ 1.svg);
+}
+
+.new{
+    width: 180px;height: 45px;margin-top: 46px;position: absolute;
+    background-color: rgba(255, 216, 59, 1);
+}
+
+.new-text{
+    @include text-st(600,16px,20px,rgb(0, 0, 0),'Open Sans');margin:13px 28px;
+}
+
+.text{margin-left: 23px;margin-top: 16px;}
+
+.text-head{
+    @include text-st(400,26px,34px,black,'Open Sans');
+}
+
+.main-time{
+    width: 80px;margin-top: 11px;height: 20px;
+    display: flex;;
+}
+.main-time-logo{
+    border-radius: 30px;border: 1px solid rgba(199, 199, 199, 1);height: 16px;
+    margin-right: 7px;display: flex;justify-content: end;width: 16px;
+    }
+.logo-width{width: 10px;height: 10px;}
+
+.time-text{@include text-st(400,12px,20px,rgba(158, 158, 158, 1),'Open Sans');margin-top:-1px}
+
+
+.main1-info{width: 185px;height: 20px;display: flex;margin-top: 20px;}
+.main1-info-img{width: 16px;margin-right: 14px;}
+.main1-info-text{@include text-st(400,14px,20px,rgba(75, 75, 75, 1),'Open Sans');}
+
+.main2-info{width: 257px;height: 20px;display: flex;margin-top: 9px;}
+.main2-info-img{width: 16px;margin-right: 14px;}
+.main2-info-text{@include text-st(400,14px,20px,rgba(75, 75, 75, 1),'Open Sans');}
+
+.main3-info{width: 530px;height: 30px;display: flex;margin-top: 11px;}
+.main3-info-img{width: 16px;margin-right: 14px;}
+.main3-info-text{@include text-st(400,14px,20px,rgba(75, 75, 75, 1),'Open Sans');}
+
+.main4-info{width: 540px;height: 20px;display: flex;margin-top: 13px;}
+.main4-info-img{width: 16px;margin-right: 14px;}
+.main4-info-text{@include text-st(400,14px,20px,rgba(75, 75, 75, 1),'Open Sans');}
+
+
+.time1{
+background-color: rgba(217, 232, 255, 1);border-radius: 11px;
+width: 63px;margin-left: 10px;margin-right: 6px;text-align: center;
+@include text-st(400,14px,20px,rgba(52,52,52,1),'Open Sans');}
+.time2{
+background-color: rgba(217, 232, 255, 1);border-radius: 11px;
+width: 63px;margin-right: 6px;text-align: center;
+@include text-st(400,14px,20px,rgba(52,52,52,1),'Open Sans');
+}
+.time3{
+background-color: rgba(217, 232, 255, 1);border-radius: 11px;
+width: 63px;margin-right: 6px;text-align: center;
+@include text-st(400,14px,20px,rgba(52,52,52,1),'Open Sans');
+}
+.time4{
+    background-color: rgba(217, 232, 255, 1);border-radius: 11px;
+    width: 63px;margin-right: 6px;text-align: center;
+    @include text-st(400,14px,20px,rgba(52,52,52,1),'Open Sans');
+    }
+
+
+.time1:active{background-color: rgba(107, 166, 255, 1);color: white;}
+.time2:active{background-color: rgba(107, 166, 255, 1);color: white;}
+.time3:active{background-color: rgba(107, 166, 255, 1);color: white;}
+.time4:active{background-color: rgba(107, 166, 255, 1);color: white;}
+
+
+.active{width: 329px;height: 44px;display: flex;margin-top: 35px;}
+.price{width: 129px;margin-right: 10px;}
+.price-num1{
+width: 110px;height: 23px;display: flex;
+@include text-st(400,30px,20px,rgba(0,0,0,1),'Open Sans');
+}
+.price-num2{
+width:110px;
+@include text-st(400,10px,20px,rgba(0, 0, 0, 1),'Open Sans');
+}
+.price-R{width: 17px;height: 23px;color: rgb(255, 0, 0);}
+
+.button{
+width: 165px;height: 44px;background:rgba(254, 215, 75, 1);
+border-radius: 20px;display: flex;
+}
+
+.button:active{background-color: rgba(203, 165, 0, 1);color: white;}
+.button-text{margin:  auto;}

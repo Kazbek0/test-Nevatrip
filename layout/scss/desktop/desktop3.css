@@ -1,0 +1,345 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.main {
+  display: flex;
+  width: 1070px;
+  height: 370px;
+  border-radius: 15px;
+  border: 0.5px solid #8e8e8e;
+  margin-top: 67px;
+  margin-left: 184px; }
+
+.img {
+  width: 473px;
+  height: 396px;
+  background-repeat: no-repeat;
+  background-image: url(../../img/music\ 1.svg); }
+
+.new {
+  width: 180px;
+  height: 45px;
+  margin-top: 46px;
+  position: absolute;
+  background-color: #ffd83b; }
+
+.new-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  font-family: "Open Sans";
+  margin: 13px 28px; }
+
+.text {
+  margin-left: 23px;
+  margin-top: 16px; }
+
+.text-head {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: black;
+  font-family: "Open Sans"; }
+
+.main-time {
+  width: 80px;
+  margin-top: 11px;
+  height: 20px;
+  display: flex; }
+
+.main-time-logo {
+  border-radius: 30px;
+  border: 1px solid #c7c7c7;
+  height: 16px;
+  margin-right: 7px;
+  display: flex;
+  justify-content: end;
+  width: 16px; }
+
+.logo-width {
+  width: 10px;
+  height: 10px; }
+
+.time-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9e9e9e;
+  font-family: "Open Sans";
+  margin-top: -1px; }
+
+.main1-info {
+  width: 185px;
+  height: 20px;
+  display: flex;
+  margin-top: 20px; }
+
+.main1-info-img {
+  width: 16px;
+  margin-right: 14px; }
+
+.main1-info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b4b4b;
+  font-family: "Open Sans"; }
+
+.main2-info {
+  width: 257px;
+  height: 20px;
+  display: flex;
+  margin-top: 9px; }
+
+.main2-info-img {
+  width: 16px;
+  margin-right: 14px; }
+
+.main2-info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b4b4b;
+  font-family: "Open Sans"; }
+
+.main3-info {
+  width: 530px;
+  height: 30px;
+  display: flex;
+  margin-top: 11px; }
+
+.main3-info-img {
+  width: 16px;
+  margin-right: 14px; }
+
+.main3-info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b4b4b;
+  font-family: "Open Sans"; }
+
+.main4-info {
+  width: 620px;
+  height: 20px;
+  display: flex;
+  margin-top: 13px; }
+
+.main4-info-img {
+  width: 16px;
+  margin-right: 14px; }
+
+.main4-info-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4b4b4b;
+  font-family: "Open Sans"; }
+
+.time1 {
+  background-color: #d9e8ff;
+  border-radius: 11px;
+  border: none;
+  width: 63px;
+  margin-left: 10px;
+  margin-right: 6px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  font-family: "Open Sans"; }
+
+.time2 {
+  background-color: #d9e8ff;
+  border-radius: 11px;
+  width: 63px;
+  margin-right: 6px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  font-family: "Open Sans"; }
+
+.time3 {
+  background-color: #d9e8ff;
+  border-radius: 11px;
+  width: 63px;
+  margin-right: 6px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  font-family: "Open Sans"; }
+
+.more {
+  background-color: #d9e8ff;
+  border-radius: 11px;
+  width: 63px;
+  margin-right: 6px;
+  text-align: center;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343434;
+  font-family: "Open Sans"; }
+
+.time4 {
+  background-color: #d9e8ff;
+  border-radius: 11px;
+  width: 63px;
+  margin-right: 6px;
+  text-align: center;
+  opacity: 0;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #343434;
+  font-family: "Open Sans"; }
+
+.time1:active {
+  background-color: #6ba6ff;
+  color: white; }
+
+.time2:active {
+  background-color: #6ba6ff;
+  color: white; }
+
+.time3:active {
+  background-color: #6ba6ff;
+  color: white; }
+
+.more:active {
+  background-color: #6ba6ff;
+  color: white; }
+
+.more:focus ~ .time4 {
+  opacity: 1; }
+
+.time4:focus {
+  opacity: 1; }
+
+.time4:active {
+  background-color: #6ba6ff;
+  color: white; }
+
+.active {
+  width: 329px;
+  height: 44px;
+  display: flex;
+  margin-top: 35px; }
+
+.price {
+  width: 129px;
+  margin-right: 10px; }
+
+.price-num1 {
+  width: 110px;
+  height: 23px;
+  display: flex;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 20px;
+  color: black;
+  font-family: "Open Sans"; }
+
+.price-num2 {
+  width: 110px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: black;
+  font-family: "Open Sans"; }
+
+.price-R {
+  width: 17px;
+  height: 23px;
+  color: red; }
+
+.button {
+  width: 165px;
+  height: 44px;
+  background: #fed74b;
+  border-radius: 20px;
+  display: flex; }
+
+.button:active {
+  background-color: #cba500;
+  color: white; }
+
+.button-text {
+  margin: auto; }
+
+/*# sourceMappingURL=desktop3.css.map */
