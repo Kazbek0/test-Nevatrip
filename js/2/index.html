@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="t.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+     <select name="route" id="route" onchange='findOption1(this)'>
+        <option >Выберите маршрут</option>
+        <option value="из A в B">из A в B</option>
+        <option value="из B в A">из B в A</option>
+        <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+      </select> <br>
+
+      
+<select   name="time" id="time" onchange='findOption2(this)' >
+<option   >Выберите время</option>
+  <option value="18:00(из A в B)">18:00(из A в B)</option>
+  <option value="18:30(из A в B)">18:30(из A в B)</option>
+  <option value="18:45(из A в B)">18:45(из A в B)</option>
+  <option value="19:00(из A в B)">19:00(из A в B)</option>
+  <option value="19:15(из A в B)">19:15(из A в B)</option>
+  <option value="21:00(из A в B)">21:00(из A в B)</option>
+  <option value="18:30(из B в A)">18:30(из B в A)</option>
+  <option value="18:45(из B в A)">18:45(из B в A)</option>
+  <option value="19:00(из B в A)">19:00(из B в A)</option>
+  <option value="19:15(из B в A)">19:15(из B в A)</option>
+  <option value="19:35(из B в A)">19:35(из B в A)</option>
+  <option value="21:50(из B в A)">21:50(из B в A)</option>
+  <option value="21:55(из B в A)">21:55(из B в A)</option>
+</select> <br>
+
+<input placeholder="Количество билетов"  id="num" onchange='findOption3(this)'>
+
+<button onclick="findOption3()">Посчитать</button>
+
+
+
+ 
+
+</body>
+</html>
